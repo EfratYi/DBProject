@@ -6,12 +6,12 @@
 
 ### **Phase 1: Design and Build the Database**  
 
-- [📜 Introduction](##introduction)  
-- [📊 ERD (Entity-Relationship Diagram)](#-erd-entity-relationship-diagram)  
-- [📂 DSD (Data Structure Diagram)](#-dsd-data-structure-diagram)  
-- [📝 SQL Scripts](#-sql-scripts)  
-- [📊 Data](#-data)  
-- [💾 Backup](#-backup)  
+- [📜 Introduction](#introduction)  
+- [📊 ERD (Entity-Relationship Diagram)](#erd-entity-relationship-diagram)  
+- [📂 DSD (Data Structure Diagram)](#dsd-data-structure-diagram)  
+- [📝 SQL Scripts](#sql-scripts)  
+- [📊 Data](#data)  
+- [💾 Backup](#backup)  
 
 ### **Phase 2: Integration**  
 - [🔗 Integration](#-integration)  

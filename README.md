@@ -22,26 +22,29 @@ Design and Build the Database
 ## Introduction
 The Olympiad Database is designed to efficiently manage information related to athletes, competitions, venues, and results. This system ensures seamless organization and tracking of essential details such as competition schedules, athlete rankings, sports categories, and venue capacities. By maintaining structured and easily accessible data, the system enhances event coordination, performance analysis, and historical record-keeping for future Olympiad events.
 
-Purpose of the Database
+**Purpose of the Database:**
+
 This database serves as a structured and reliable solution for managing Olympiad events by enabling:
 
-Efficient Competition Organization – Schedule and manage competitions, ensuring accurate tracking of events, venues, and participants.
+ •Efficient Competition Organization – Schedule and manage competitions, ensuring accurate tracking of events, venues, and participants.
 
-Athlete Performance Monitoring – Record and analyze athlete rankings, medal achievements, and participation history.
+ •Athlete Performance Monitoring – Record and analyze athlete rankings, medal achievements, and participation history.
 
-Venue and Sport Management – Maintain detailed records of venues, including location, capacity, and assigned sports.
+ •Venue and Sport Management – Maintain detailed records of venues, including location, capacity, and assigned sports.
 
-Structured Athlete and Country Data – Link athletes to their respective countries, track their progress, and store demographic details.
+ •Structured Athlete and Country Data – Link athletes to their respective countries, track their progress, and store demographic details.
 
-Ticketing and Audience Coordination – Manage ticket sales, pricing, and attendance data for competitions.
-Potential Use Cases
-Olympiad Organizers can efficiently allocate venues, schedule competitions, and track athlete performances.
+ •Ticketing and Audience Coordination – Manage ticket sales, pricing, and attendance data for competitions.
 
-Athletes and Coaches can access competition records, track progress, and analyze past performances.
+**Potential Use Cases:**
 
-Sports Analysts can retrieve data on sports trends, medal distributions, and athlete statistics.
+ •Olympiad Organizers can efficiently allocate venues, schedule competitions, and track athlete performances.
 
-Audience and Ticketing Management ensures smooth ticket distribution and event attendance tracking.
+ •Athletes and Coaches can access competition records, track progress, and analyze past performances.
+
+ •Sports Analysts can retrieve data on sports trends, medal distributions, and athlete statistics.
+
+ •Audience and Ticketing Management ensures smooth ticket distribution and event attendance tracking.
 
 This structured database streamlines Olympiad management, enhancing organization, record-keeping, and accessibility for all involved.
 

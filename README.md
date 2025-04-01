@@ -1,15 +1,28 @@
-![image](https://github.com/user-attachments/assets/8caf3bd4-3498-4dab-92be-a1044d420e71)# DBProject
-Efrat Miletzky& Efrat Yishay
+Olympiad
+
+Efrat Miletzky & Efrat Yishay
+
 Table of Contents
-Phase 1: Design and Build the Database
+
+Phase 1: 
+Design and Build the Database
+
 Introduction
+
 ERD (Entity-Relationship Diagram)
+
 DSD (Data Structure Diagram)
+
 SQL Scripts
+
 Data
+
 Backup
+
 Phase 2: Integration
-Phase 1: Design and Build the Database
+
+Phase 1: 
+Design and Build the Database
 Introduction
 The Olympiad Database is designed to efficiently manage information related to athletes, competitions, venues, and results. This system ensures seamless organization and tracking of essential details such as competition schedules, athlete rankings, sports categories, and venue capacities. By maintaining structured and easily accessible data, the system enhances event coordination, performance analysis, and historical record-keeping for future Olympiad events.
 
@@ -58,14 +71,28 @@ Select All Data Script - The SQL script for selectAll tables is available in the
 📜 View selectAllTables.sql
 
 Data
-First tool: using mockaro to create csv file
+First tool: 
+
+using mockaro to create csv file
+
 Entering a data to Ticket table
-person id scope 1-800 📜View MOCK_DATA.csv
+ticket id scope 1-400 📜View MOCK_DATA.csv
 Entering a data to ticket table
+
 Formula of Ticket ID: this + 400 
+
 <img width="910" alt="Mock" src="https://github.com/user-attachments/assets/3d2e44bb-4ffe-4707-93f5-eecadf41106f" />
+
 <img width="483" alt="dockerMock" src="https://github.com/user-attachments/assets/a3f69cd3-74d2-434b-9a15-d6321189cc0f" />
- results for the command ![image](https://github.com/user-attachments/assets/0757ab00-5c71-4e61-a844-dc23c7bc8d61)
+
+ results for the command ![image](https://github.com/user-attachments/assets/3b231762-b88d-4b66-94a7-1ade6c140eed)
  
 ![image](https://github.com/user-attachments/assets/477ba7ee-7597-4850-8954-1aca70c14567)
+
+
+Second tool: using generatedata. to create csv file
+Entering a data to Athlete table
+Group Number scope 1-400 📜View generatedata.csv
+
+
 

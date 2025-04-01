@@ -55,16 +55,16 @@ This structured database streamlines Olympiad management, enhancing organization
 Provide the following SQL scripts:
 
 Create Tables Script - The SQL script for creating the database tables is available in the repository:
-📜 [View createTables.sql](script/createTables.sql)
+📜 [View createTables.sql](stage1/script/createTables.sql)
 
 Insert Data Script - The SQL script for insert data to the database tables is available in the repository:
-📜 [View createTables.sql](script/insertTables.sql)
+📜 [View createTables.sql](stage1/script/insertTables.sql)
 
 Drop Tables Script - The SQL script for droping all tables is available in the repository:
-📜 [View createTables.sql](script/dropTables.sql)
+📜 [View createTables.sql](stage1/script/dropTables.sql)
 
 Select All Data Script - The SQL script for selectAll tables is available in the repository:
-📜 [View createTables.sql](script/selectTables.sql)
+📜 [View createTables.sql](stage1/script/selectTables.sql)
 
 ## Data
 
@@ -73,7 +73,7 @@ Select All Data Script - The SQL script for selectAll tables is available in the
 using [Mockaroo](https://www.mockaroo.com/) to create csv file
 
 Entering a data to Ticket table
-ticket id scope 1-400 📜 [View MOCK_DATA.csv](mockData/MOCK_DATA.csv)
+ticket id scope 1-400 📜 [View MOCK_DATA.csv](stage1/mockData/MOCK_DATA.csv)
 Entering a data to ticket table
 
 Formula of Ticket ID: this + 400 
@@ -93,7 +93,7 @@ Formula of Ticket ID: this + 400
 using [generatedata](https://generatedata.com/) to create csv file
 
 Entering a data to Athlete table
-Group Number scope 1-400 📜 [View generatedata.csv](generateData/generatedata.csv)
+Group Number scope 1-400 📜 [View generatedata.csv](stage1/generateData/generatedata.csv)
 
 ![image](https://github.com/user-attachments/assets/6da72513-0028-4a45-bbfb-3d8f323a9655)
 
@@ -116,9 +116,9 @@ the terminal result:
 
 ![image](https://github.com/user-attachments/assets/83321167-43fa-403f-84e9-c9e19749c56f)
 
-Group Number scope 1-400 📜 [View tickets_data.csv](PythonScript/tickets_data.csv)
+Group Number scope 1-400 📜 [View tickets_data.csv](stage1/PythonScript/tickets_data.csv)
 
-**For other files 📜 [View DataImportFiles](/DataImportFiles)
+**For other files 📜 [View DataImportFiles](stage1/DataImportFiles)
 
 
 ## Backup

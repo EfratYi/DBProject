@@ -132,6 +132,15 @@ create backup file in cmd:
 
 📜 [View backupFile](stage1/Backup/backupFile)
 
+reconstruction:
+
+![image](https://github.com/user-attachments/assets/fd3b4dd4-114e-4cf9-b009-a5d71e45b293)
+
+![image](https://github.com/user-attachments/assets/8851bf9e-79c1-41d7-9c80-6bb49aa15bcf)
+
+results in pgsadmin:
+![image](https://github.com/user-attachments/assets/d1ca649f-cd41-4ba9-a062-b39861bb204f)
+
 
 ## Phase 2: Integration
 

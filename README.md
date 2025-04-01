@@ -1,4 +1,4 @@
-# DBProject
+![image](https://github.com/user-attachments/assets/8caf3bd4-3498-4dab-92be-a1044d420e71)# DBProject
 Efrat Miletzky& Efrat Yishay
 Table of Contents
 Phase 1: Design and Build the Database
@@ -37,10 +37,10 @@ Audience and Ticketing Management ensures smooth ticket distribution and event a
 This structured database streamlines Olympiad management, enhancing organization, record-keeping, and accessibility for all involved.
 
 ERD (Entity-Relationship Diagram)
-ERD Diagram
+![image](https://github.com/user-attachments/assets/a13786b5-c262-4ed1-9c62-8c83885ab3d9)
 
 DSD (Data Structure Diagram)
-DSD Diagram
+![DSD](https://github.com/user-attachments/assets/d2b49d11-fa2b-4304-89a2-a6e12675b3b5)
 
 SQL Scripts
 Provide the following SQL scripts:
@@ -66,5 +66,6 @@ Formula of Ticket ID: this + 400
 <img width="910" alt="Mock" src="https://github.com/user-attachments/assets/3d2e44bb-4ffe-4707-93f5-eecadf41106f" />
 <img width="483" alt="dockerMock" src="https://github.com/user-attachments/assets/a3f69cd3-74d2-434b-9a15-d6321189cc0f" />
  results for the command ![image](https://github.com/user-attachments/assets/0757ab00-5c71-4e61-a844-dc23c7bc8d61)
+ 
 ![image](https://github.com/user-attachments/assets/477ba7ee-7597-4850-8954-1aca70c14567)
 

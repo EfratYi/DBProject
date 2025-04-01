@@ -1,6 +1,5 @@
 # DBProject
-Sufiev Hadasa Hadar Example
-
+Efrat Miletzky& Efrat Yishay
 Table of Contents
 Phase 1: Design and Build the Database
 Introduction

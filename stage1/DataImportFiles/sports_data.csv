@@ -1,0 +1,401 @@
+SportID,SportName,Category
+1,Swimming,Individual
+2,Tennis,Individual
+3,Soccer,Team
+4,Boxing,Individual
+5,Volleyball,Team
+6,Badminton,Individual
+7,Baseball,Team
+8,Cycling,Individual
+9,Handball,Team
+10,Karate,Individual
+11,Rugby,Team
+12,Table Tennis,Individual
+13,Hockey,Team
+14,Fencing,Individual
+15,Wrestling,Individual
+16,Weightlifting,Individual
+17,Golf,Individual
+18,Rowing,Team
+19,Skiing,Individual
+20,Skateboarding,Individual
+21,Climbing,Individual
+22,Canoeing,Individual
+23,Archery,Individual
+24,Diving,Individual
+25,Equestrian,Individual
+26,Judo,Individual
+27,Sailing,Individual
+28,Shooting,Individual
+29,Triathlon,Individual
+30,Surfing,Individual
+31,Lacrosse,Team
+32,Field Hockey,Team
+33,Softball,Team
+34,Water Polo,Team
+35,BMX Racing,Individual
+36,Taekwondo,Individual
+37,Marathon,Individual
+38,Gymnastics,Individual
+39,Snooker,Individual
+40,Darts,Individual
+41,Kickboxing,Individual
+42,Cricket,Team
+43,Ice Hockey,Team
+44,Speed Skating,Individual
+45,Figure Skating,Individual
+46,Nordic Combined,Individual
+47,Basketball,Team
+48,Swimming,Individual
+49,Tennis,Individual
+50,Soccer,Team
+51,Boxing,Individual
+52,Volleyball,Team
+53,Badminton,Individual
+54,Baseball,Team
+55,Cycling,Individual
+56,Handball,Team
+57,Karate,Individual
+58,Rugby,Team
+59,Table Tennis,Individual
+60,Hockey,Team
+61,Fencing,Individual
+62,Wrestling,Individual
+63,Weightlifting,Individual
+64,Golf,Individual
+65,Rowing,Team
+66,Skiing,Individual
+67,Skateboarding,Individual
+68,Climbing,Individual
+69,Canoeing,Individual
+70,Archery,Individual
+71,Diving,Individual
+72,Equestrian,Individual
+73,Judo,Individual
+74,Sailing,Individual
+75,Shooting,Individual
+76,Triathlon,Individual
+77,Surfing,Individual
+78,Lacrosse,Team
+79,Field Hockey,Team
+80,Softball,Team
+81,Water Polo,Team
+82,BMX Racing,Individual
+83,Taekwondo,Individual
+84,Marathon,Individual
+85,Gymnastics,Individual
+86,Snooker,Individual
+87,Darts,Individual
+88,Kickboxing,Individual
+89,Cricket,Team
+90,Ice Hockey,Team
+91,Speed Skating,Individual
+92,Figure Skating,Individual
+93,Nordic Combined,Individual
+94,Basketball,Team
+95,Swimming,Individual
+96,Tennis,Individual
+97,Soccer,Team
+98,Boxing,Individual
+99,Volleyball,Team
+100,Badminton,Individual
+101,Baseball,Team
+102,Cycling,Individual
+103,Handball,Team
+104,Karate,Individual
+105,Rugby,Team
+106,Table Tennis,Individual
+107,Hockey,Team
+108,Fencing,Individual
+109,Wrestling,Individual
+110,Weightlifting,Individual
+111,Golf,Individual
+112,Rowing,Team
+113,Skiing,Individual
+114,Skateboarding,Individual
+115,Climbing,Individual
+116,Canoeing,Individual
+117,Archery,Individual
+118,Diving,Individual
+119,Equestrian,Individual
+120,Judo,Individual
+121,Sailing,Individual
+122,Shooting,Individual
+123,Triathlon,Individual
+124,Surfing,Individual
+125,Lacrosse,Team
+126,Field Hockey,Team
+127,Softball,Team
+128,Water Polo,Team
+129,BMX Racing,Individual
+130,Taekwondo,Individual
+131,Marathon,Individual
+132,Gymnastics,Individual
+133,Snooker,Individual
+134,Darts,Individual
+135,Kickboxing,Individual
+136,Cricket,Team
+137,Ice Hockey,Team
+138,Speed Skating,Individual
+139,Figure Skating,Individual
+140,Nordic Combined,Individual
+141,Basketball,Team
+142,Swimming,Individual
+143,Tennis,Individual
+144,Soccer,Team
+145,Boxing,Individual
+146,Volleyball,Team
+147,Badminton,Individual
+148,Baseball,Team
+149,Cycling,Individual
+150,Handball,Team
+151,Karate,Individual
+152,Rugby,Team
+153,Table Tennis,Individual
+154,Hockey,Team
+155,Fencing,Individual
+156,Wrestling,Individual
+157,Weightlifting,Individual
+158,Golf,Individual
+159,Rowing,Team
+160,Skiing,Individual
+161,Skateboarding,Individual
+162,Climbing,Individual
+163,Canoeing,Individual
+164,Archery,Individual
+165,Diving,Individual
+166,Equestrian,Individual
+167,Judo,Individual
+168,Sailing,Individual
+169,Shooting,Individual
+170,Triathlon,Individual
+171,Surfing,Individual
+172,Lacrosse,Team
+173,Field Hockey,Team
+174,Softball,Team
+175,Water Polo,Team
+176,BMX Racing,Individual
+177,Taekwondo,Individual
+178,Marathon,Individual
+179,Gymnastics,Individual
+180,Snooker,Individual
+181,Darts,Individual
+182,Kickboxing,Individual
+183,Cricket,Team
+184,Ice Hockey,Team
+185,Speed Skating,Individual
+186,Figure Skating,Individual
+187,Nordic Combined,Individual
+188,Basketball,Team
+189,Swimming,Individual
+190,Tennis,Individual
+191,Soccer,Team
+192,Boxing,Individual
+193,Volleyball,Team
+194,Badminton,Individual
+195,Baseball,Team
+196,Cycling,Individual
+197,Handball,Team
+198,Karate,Individual
+199,Rugby,Team
+200,Table Tennis,Individual
+201,Hockey,Team
+202,Fencing,Individual
+203,Wrestling,Individual
+204,Weightlifting,Individual
+205,Golf,Individual
+206,Rowing,Team
+207,Skiing,Individual
+208,Skateboarding,Individual
+209,Climbing,Individual
+210,Canoeing,Individual
+211,Archery,Individual
+212,Diving,Individual
+213,Equestrian,Individual
+214,Judo,Individual
+215,Sailing,Individual
+216,Shooting,Individual
+217,Triathlon,Individual
+218,Surfing,Individual
+219,Lacrosse,Team
+220,Field Hockey,Team
+221,Softball,Team
+222,Water Polo,Team
+223,BMX Racing,Individual
+224,Taekwondo,Individual
+225,Marathon,Individual
+226,Gymnastics,Individual
+227,Snooker,Individual
+228,Darts,Individual
+229,Kickboxing,Individual
+230,Cricket,Team
+231,Ice Hockey,Team
+232,Speed Skating,Individual
+233,Figure Skating,Individual
+234,Nordic Combined,Individual
+235,Basketball,Team
+236,Swimming,Individual
+237,Tennis,Individual
+238,Soccer,Team
+239,Boxing,Individual
+240,Volleyball,Team
+241,Badminton,Individual
+242,Baseball,Team
+243,Cycling,Individual
+244,Handball,Team
+245,Karate,Individual
+246,Rugby,Team
+247,Table Tennis,Individual
+248,Hockey,Team
+249,Fencing,Individual
+250,Wrestling,Individual
+251,Weightlifting,Individual
+252,Golf,Individual
+253,Rowing,Team
+254,Skiing,Individual
+255,Skateboarding,Individual
+256,Climbing,Individual
+257,Canoeing,Individual
+258,Archery,Individual
+259,Diving,Individual
+260,Equestrian,Individual
+261,Judo,Individual
+262,Sailing,Individual
+263,Shooting,Individual
+264,Triathlon,Individual
+265,Surfing,Individual
+266,Lacrosse,Team
+267,Field Hockey,Team
+268,Softball,Team
+269,Water Polo,Team
+270,BMX Racing,Individual
+271,Taekwondo,Individual
+272,Marathon,Individual
+273,Gymnastics,Individual
+274,Snooker,Individual
+275,Darts,Individual
+276,Kickboxing,Individual
+277,Cricket,Team
+278,Ice Hockey,Team
+279,Speed Skating,Individual
+280,Figure Skating,Individual
+281,Nordic Combined,Individual
+282,Basketball,Team
+283,Swimming,Individual
+284,Tennis,Individual
+285,Soccer,Team
+286,Boxing,Individual
+287,Volleyball,Team
+288,Badminton,Individual
+289,Baseball,Team
+290,Cycling,Individual
+291,Handball,Team
+292,Karate,Individual
+293,Rugby,Team
+294,Table Tennis,Individual
+295,Hockey,Team
+296,Fencing,Individual
+297,Wrestling,Individual
+298,Weightlifting,Individual
+299,Golf,Individual
+300,Rowing,Team
+301,Skiing,Individual
+302,Skateboarding,Individual
+303,Climbing,Individual
+304,Canoeing,Individual
+305,Archery,Individual
+306,Diving,Individual
+307,Equestrian,Individual
+308,Judo,Individual
+309,Sailing,Individual
+310,Shooting,Individual
+311,Triathlon,Individual
+312,Surfing,Individual
+313,Lacrosse,Team
+314,Field Hockey,Team
+315,Softball,Team
+316,Water Polo,Team
+317,BMX Racing,Individual
+318,Taekwondo,Individual
+319,Marathon,Individual
+320,Gymnastics,Individual
+321,Snooker,Individual
+322,Darts,Individual
+323,Kickboxing,Individual
+324,Cricket,Team
+325,Ice Hockey,Team
+326,Speed Skating,Individual
+327,Figure Skating,Individual
+328,Nordic Combined,Individual
+329,Basketball,Team
+330,Swimming,Individual
+331,Tennis,Individual
+332,Soccer,Team
+333,Boxing,Individual
+334,Volleyball,Team
+335,Badminton,Individual
+336,Baseball,Team
+337,Cycling,Individual
+338,Handball,Team
+339,Karate,Individual
+340,Rugby,Team
+341,Table Tennis,Individual
+342,Hockey,Team
+343,Fencing,Individual
+344,Wrestling,Individual
+345,Weightlifting,Individual
+346,Golf,Individual
+347,Rowing,Team
+348,Skiing,Individual
+349,Skateboarding,Individual
+350,Climbing,Individual
+351,Canoeing,Individual
+352,Archery,Individual
+353,Diving,Individual
+354,Equestrian,Individual
+355,Judo,Individual
+356,Sailing,Individual
+357,Shooting,Individual
+358,Triathlon,Individual
+359,Surfing,Individual
+360,Lacrosse,Team
+361,Field Hockey,Team
+362,Softball,Team
+363,Water Polo,Team
+364,BMX Racing,Individual
+365,Taekwondo,Individual
+366,Marathon,Individual
+367,Gymnastics,Individual
+368,Snooker,Individual
+369,Darts,Individual
+370,Kickboxing,Individual
+371,Cricket,Team
+372,Ice Hockey,Team
+373,Speed Skating,Individual
+374,Figure Skating,Individual
+375,Nordic Combined,Individual
+376,Basketball,Team
+377,Swimming,Individual
+378,Tennis,Individual
+379,Soccer,Team
+380,Boxing,Individual
+381,Volleyball,Team
+382,Badminton,Individual
+383,Baseball,Team
+384,Cycling,Individual
+385,Handball,Team
+386,Karate,Individual
+387,Rugby,Team
+388,Table Tennis,Individual
+389,Hockey,Team
+390,Fencing,Individual
+391,Wrestling,Individual
+392,Weightlifting,Individual
+393,Golf,Individual
+394,Rowing,Team
+395,Skiing,Individual
+396,Skateboarding,Individual
+397,Climbing,Individual
+398,Canoeing,Individual
+399,Archery,Individual
+400,Diving,Individual

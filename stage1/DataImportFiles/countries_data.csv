@@ -1,0 +1,401 @@
+CountryId,CountryName,TotalMedals
+1,South Korea,261
+2,Spain,97
+3,Mexico,301
+4,Netherlands,136
+5,Switzerland,225
+6,Italy,430
+7,Finland,286
+8,Poland,358
+9,UK,498
+10,Mexico,372
+11,Ukraine,408
+12,Argentina,255
+13,Germany,460
+14,Israel,66
+15,UK,201
+16,Argentina,438
+17,Portugal,467
+18,Sweden,201
+19,South Africa,126
+20,Egypt,212
+21,UK,483
+22,South Korea,358
+23,Belgium,304
+24,Mexico,277
+25,Sweden,210
+26,Germany,180
+27,India,239
+28,Mexico,59
+29,Egypt,204
+30,India,161
+31,Czech Republic,322
+32,Sweden,9
+33,Czech Republic,463
+34,France,478
+35,Denmark,189
+36,India,334
+37,Egypt,456
+38,Russia,445
+39,Sweden,188
+40,Germany,172
+41,Ukraine,442
+42,USA,126
+43,France,491
+44,Italy,346
+45,South Africa,449
+46,Mexico,250
+47,New Zealand,130
+48,India,185
+49,Mexico,388
+50,India,398
+51,New Zealand,398
+52,France,314
+53,Russia,441
+54,South Africa,222
+55,Turkey,406
+56,Canada,21
+57,Israel,127
+58,Belgium,322
+59,Egypt,484
+60,Greece,239
+61,Brazil,1
+62,Finland,303
+63,Ukraine,455
+64,Netherlands,258
+65,Portugal,345
+66,India,455
+67,Japan,125
+68,Australia,74
+69,Finland,492
+70,South Africa,89
+71,Israel,158
+72,Denmark,108
+73,Turkey,271
+74,Canada,490
+75,Japan,99
+76,Portugal,176
+77,Spain,373
+78,Norway,424
+79,India,132
+80,UK,182
+81,Canada,368
+82,Greece,198
+83,Brazil,96
+84,Egypt,20
+85,Egypt,353
+86,Argentina,262
+87,Poland,88
+88,Belgium,419
+89,China,163
+90,Germany,21
+91,Switzerland,59
+92,Canada,486
+93,Netherlands,428
+94,New Zealand,4
+95,UK,161
+96,India,473
+97,Portugal,466
+98,China,57
+99,Japan,432
+100,Canada,247
+101,South Korea,61
+102,Sweden,409
+103,Norway,457
+104,South Africa,373
+105,Czech Republic,103
+106,India,400
+107,France,163
+108,Poland,61
+109,China,24
+110,Belgium,428
+111,Norway,186
+112,Netherlands,480
+113,Belgium,494
+114,Mexico,403
+115,Turkey,29
+116,USA,262
+117,Greece,212
+118,Israel,271
+119,Mexico,404
+120,Poland,149
+121,Brazil,110
+122,Egypt,280
+123,Ukraine,333
+124,Spain,93
+125,Finland,41
+126,Sweden,293
+127,France,282
+128,Greece,323
+129,Denmark,479
+130,South Korea,135
+131,Australia,382
+132,Japan,340
+133,Greece,355
+134,Germany,323
+135,Germany,71
+136,Poland,272
+137,New Zealand,485
+138,Brazil,374
+139,Denmark,64
+140,Norway,407
+141,Israel,418
+142,Portugal,261
+143,Italy,28
+144,Poland,390
+145,Belgium,17
+146,USA,224
+147,Netherlands,298
+148,Brazil,238
+149,China,245
+150,Poland,309
+151,France,160
+152,Czech Republic,63
+153,Netherlands,189
+154,UK,349
+155,Mexico,33
+156,France,419
+157,Czech Republic,236
+158,Japan,366
+159,Belgium,432
+160,Germany,297
+161,Egypt,327
+162,Norway,65
+163,Ukraine,264
+164,Denmark,275
+165,Czech Republic,245
+166,USA,34
+167,Portugal,2
+168,Brazil,361
+169,Argentina,366
+170,Spain,223
+171,Poland,328
+172,Brazil,490
+173,New Zealand,443
+174,USA,33
+175,China,164
+176,Czech Republic,318
+177,Israel,456
+178,Israel,468
+179,Mexico,365
+180,Russia,46
+181,Denmark,2
+182,Turkey,266
+183,Israel,162
+184,Russia,8
+185,Finland,83
+186,South Africa,19
+187,Germany,291
+188,Ukraine,51
+189,Russia,160
+190,Mexico,80
+191,Czech Republic,492
+192,USA,284
+193,Netherlands,53
+194,South Korea,138
+195,China,7
+196,Netherlands,253
+197,Germany,351
+198,Japan,241
+199,Poland,307
+200,Egypt,75
+201,Mexico,92
+202,Australia,58
+203,Portugal,487
+204,China,67
+205,Canada,53
+206,Argentina,438
+207,Spain,209
+208,Australia,119
+209,Argentina,424
+210,South Africa,376
+211,UK,56
+212,Russia,247
+213,Greece,44
+214,Russia,414
+215,Italy,96
+216,China,133
+217,New Zealand,303
+218,China,84
+219,Switzerland,481
+220,New Zealand,1
+221,Ukraine,31
+222,Belgium,234
+223,Finland,465
+224,Brazil,368
+225,New Zealand,227
+226,South Africa,156
+227,Mexico,256
+228,Brazil,185
+229,Japan,85
+230,Mexico,49
+231,Argentina,454
+232,Ukraine,312
+233,Poland,391
+234,Sweden,92
+235,Canada,282
+236,New Zealand,233
+237,France,424
+238,New Zealand,173
+239,Netherlands,246
+240,China,63
+241,Japan,271
+242,Brazil,318
+243,Norway,104
+244,Czech Republic,252
+245,Mexico,280
+246,Germany,247
+247,Brazil,22
+248,Poland,410
+249,Norway,23
+250,Italy,463
+251,Netherlands,290
+252,Italy,118
+253,Portugal,178
+254,Argentina,484
+255,UK,373
+256,Israel,57
+257,Finland,455
+258,Russia,219
+259,Israel,93
+260,Sweden,267
+261,Mexico,432
+262,Denmark,462
+263,Switzerland,150
+264,Norway,347
+265,Ukraine,269
+266,India,365
+267,Mexico,415
+268,Italy,455
+269,Denmark,162
+270,Belgium,357
+271,Netherlands,326
+272,Germany,262
+273,Argentina,441
+274,Switzerland,56
+275,Turkey,217
+276,UK,350
+277,Greece,231
+278,Finland,330
+279,Japan,389
+280,Israel,207
+281,Denmark,420
+282,Netherlands,166
+283,Russia,470
+284,Finland,440
+285,China,335
+286,Australia,87
+287,Spain,226
+288,Mexico,250
+289,New Zealand,263
+290,India,459
+291,Norway,345
+292,Portugal,143
+293,South Africa,199
+294,Sweden,444
+295,Czech Republic,329
+296,China,198
+297,Norway,246
+298,Greece,453
+299,China,28
+300,Poland,204
+301,India,203
+302,Spain,342
+303,Greece,374
+304,Sweden,271
+305,Russia,20
+306,Czech Republic,379
+307,South Korea,146
+308,Mexico,465
+309,Poland,374
+310,Mexico,92
+311,Brazil,28
+312,Belgium,426
+313,Spain,263
+314,Israel,462
+315,Denmark,175
+316,Denmark,356
+317,South Africa,224
+318,Ukraine,368
+319,Netherlands,67
+320,South Africa,186
+321,Japan,236
+322,Poland,222
+323,Spain,76
+324,Australia,387
+325,UK,50
+326,Czech Republic,340
+327,Mexico,72
+328,Spain,165
+329,Brazil,229
+330,China,62
+331,Australia,352
+332,Finland,396
+333,Poland,261
+334,New Zealand,97
+335,Italy,288
+336,Russia,158
+337,India,80
+338,Norway,250
+339,Sweden,80
+340,Israel,409
+341,Portugal,254
+342,Israel,474
+343,Switzerland,397
+344,France,284
+345,Germany,483
+346,Greece,9
+347,UK,242
+348,Italy,135
+349,Belgium,55
+350,USA,320
+351,Turkey,475
+352,Greece,96
+353,South Africa,288
+354,New Zealand,27
+355,South Korea,237
+356,Turkey,171
+357,South Korea,383
+358,Greece,264
+359,Finland,421
+360,Egypt,493
+361,Mexico,200
+362,Argentina,355
+363,Australia,343
+364,Portugal,345
+365,China,439
+366,Finland,429
+367,Canada,67
+368,Switzerland,73
+369,Netherlands,444
+370,Poland,257
+371,Japan,344
+372,Netherlands,136
+373,Italy,473
+374,Czech Republic,478
+375,China,160
+376,Russia,402
+377,Norway,406
+378,Israel,40
+379,Japan,439
+380,France,113
+381,Portugal,237
+382,Denmark,493
+383,Finland,473
+384,Norway,420
+385,Switzerland,285
+386,Finland,406
+387,Russia,280
+388,France,496
+389,Netherlands,256
+390,Czech Republic,424
+391,Brazil,290
+392,Netherlands,92
+393,Norway,361
+394,Spain,34
+395,Finland,390
+396,Turkey,430
+397,Greece,295
+398,Poland,53
+399,France,381
+400,Brazil,163

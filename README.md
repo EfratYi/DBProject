@@ -118,12 +118,17 @@ the terminal result:
 
 Group Number scope 1-400 📜 [View tickets_data.csv](PythonScript/tickets_data.csv)
 
-**For other files [View DataImportFiles](/DataImportFiles)
+**For other files 📜 [View DataImportFiles](/DataImportFiles)
 
 
 ## Backup
 backups files are kept with the date and hour of the backup:
-עבור לתיקיית הגיבויים
+create backup file in cmd:
+
+![image](https://github.com/user-attachments/assets/967d231a-0165-48a7-812a-add5a9afc65b)
+
+📜 [View backupFile](Backup/backupFile)
+
 
 ## Phase 2: Integration
 

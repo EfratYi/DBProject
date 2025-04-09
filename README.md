@@ -186,7 +186,36 @@ The query displays, in serial order according to the athlete's thesis, only the 
 
 ![image](https://github.com/user-attachments/assets/0276c60c-5c47-4032-b52d-826a33197c78)
 
- 
+#### Querie 5:
+
+The query displays, in alphabetical order by the name of the sport, data about the sport, such as: the number of competitions in that sport, the number of medals won in that sport, as well as the number of places where the sport took place and the first date the sport took place.
+
+![image](https://github.com/user-attachments/assets/7b0b84d1-accf-4a0d-b71c-839268e04f9a)
+
+![image](https://github.com/user-attachments/assets/15e2b881-110a-4cbc-b7ac-81040d7920c4)
+
+![image](https://github.com/user-attachments/assets/f5059c4d-46a7-4971-b0f1-5b0de138f482)
+
+#### Querie 6:
+
+A query that displays for each sport its most popular arena, meaning the arena where it took place the most times, and also displays the number of times.
+
+![image](https://github.com/user-attachments/assets/d855934f-8d31-4f07-a662-466f3d3524f7)
+
+![image](https://github.com/user-attachments/assets/89a0c48e-41af-4ecb-b172-89b8d998fa2b)
+
+![image](https://github.com/user-attachments/assets/61c2cb42-27ae-440f-8cde-f01ec0945ca7)
+
+#### Querie 7:
+
+A query that displays, in alphabetical order by country name, for each country the athlete who won the most medals from that country.
+
+![image](https://github.com/user-attachments/assets/1020c4df-5098-45a7-a960-6fa324b4f2f3)
+
+![image](https://github.com/user-attachments/assets/0506c56a-0501-4c6a-b186-ccce037ab79c)
+
+![image](https://github.com/user-attachments/assets/43328931-dfbf-4a6b-8271-4ff6ba8fe3e6)
+
 
 
 

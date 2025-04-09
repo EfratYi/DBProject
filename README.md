@@ -13,8 +13,8 @@
 - [📊 Data](#data)  
 - [💾 Backup](#backup)  
 
-### **Phase 2: Integration**  
-- [🔗 Integration](#-integration)  
+### **Phase 2: Queries and constraints**  
+- [🔗 Queries](#-Queries)  
 
 ## Phase 1: 
 Design and Build the Database
@@ -139,10 +139,59 @@ reconstruction:
 ![image](https://github.com/user-attachments/assets/8851bf9e-79c1-41d7-9c80-6bb49aa15bcf)
 
 results in pgsadmin:
+
 ![image](https://github.com/user-attachments/assets/d1ca649f-cd41-4ba9-a062-b39861bb204f)
 
 
-## Phase 2: Integration
+## Phase 2: Queries and constraints
+### Queries
+
+#### Querie 1:
+
+The query displays, in alphabetical order by country, for each athlete born after the year 2000 the highest medal they won... (athletes without a medal will not be displayed)
+
+![image](https://github.com/user-attachments/assets/f2cbb890-fa31-4b20-9a39-95ca8de0637c)
+
+![image](https://github.com/user-attachments/assets/7a8f105b-aa5e-42f0-9528-4b64205258c4)
+
+![image](https://github.com/user-attachments/assets/d49a9c0d-37b8-4962-a116-49cd6ce5069c)
+
+#### Querie 2:
+
+The query displays alphabetically by venue name, for each venue the number of tickets sold each month in descending order.
+
+![image](https://github.com/user-attachments/assets/e68effc2-6955-429e-9461-ff7e4381a700)
+
+![image](https://github.com/user-attachments/assets/4f94dd90-cf23-4716-8d70-73764e9a8754)
+
+![image](https://github.com/user-attachments/assets/edcb225a-643d-49d2-9c9f-6676e8ea9443)
+
+#### Querie 3:
+
+The query displays, in alphabetical order by country name, the number of athletes who participated in a particular competition for each country.
+
+![image](https://github.com/user-attachments/assets/cd9c0a2b-f6b4-4245-a353-a989ca816932)
+
+![image](https://github.com/user-attachments/assets/68e64738-113e-4e11-9f12-5ab360ecc8a5)
+
+![image](https://github.com/user-attachments/assets/d3347e7a-c35f-4129-8b04-251e447c9ddd)
+
+#### Querie 4:
+
+The query displays, in serial order according to the athlete's thesis, only the countries in which one athlete won a medal, and displays for him the highest medal he won.
+
+![image](https://github.com/user-attachments/assets/38aebe74-1806-45b1-ac26-3fae2c62d794)
+
+![image](https://github.com/user-attachments/assets/9418d711-5595-486e-ad3a-bda5716e8f0e)
+
+![image](https://github.com/user-attachments/assets/0276c60c-5c47-4032-b52d-826a33197c78)
+
+ 
+
+
+
+
+
 
 
 

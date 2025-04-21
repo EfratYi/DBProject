@@ -14,7 +14,11 @@
 - [💾 Backup](#backup)  
 
 ### **Phase 2: Queries and constraints**  
-- [🔗 Queries](#-Queries)  
+- [🔗 Queries](#Queries)
+- [🔗 Select Queries](#Select-Queries)
+- [🔗 Update Queries](#Update-Queries)
+- [🔗 Delete Queries](#Delete-Queries)
+
 
 ## Phase 1: 
 Design and Build the Database
@@ -144,7 +148,10 @@ results in pgsadmin:
 
 
 ## Phase 2: Queries and constraints
-### Queries
+
+## Queries
+
+### Select Queries
 
 #### Querie 1:
 
@@ -215,6 +222,110 @@ A query that displays, in alphabetical order by country name, for each country t
 ![image](https://github.com/user-attachments/assets/0506c56a-0501-4c6a-b186-ccce037ab79c)
 
 ![image](https://github.com/user-attachments/assets/43328931-dfbf-4a6b-8271-4ff6ba8fe3e6)
+
+
+### Update Queries
+
+#### Querie 1:
+
+-- Update total medals for each country based on actual wins
+
+![image](https://github.com/user-attachments/assets/1107727f-cd5f-4f85-9a65-15c89dce1348)
+
+![image](https://github.com/user-attachments/assets/ff158fe8-eea7-4472-bdbd-0861b9090f36)
+
+Before:
+
+![image](https://github.com/user-attachments/assets/86630574-0457-4086-909a-41cc2561233e)
+
+After:
+
+![image](https://github.com/user-attachments/assets/b220faa2-956f-4b7e-9044-78e51217c179)
+
+#### Querie 2:
+
+-- Increase ticket prices by 20% for venues with capacity over 10,000
+
+![image](https://github.com/user-attachments/assets/25e8867d-79a1-4e9c-9e5c-038820595c81)
+
+![image](https://github.com/user-attachments/assets/8306c3d9-6861-4998-a319-f73683e61bdb)
+
+Before:
+
+![image](https://github.com/user-attachments/assets/30e36489-f92e-4a95-8975-4549eab3c0b8)
+
+After:
+
+![image](https://github.com/user-attachments/assets/9513891c-6d34-49ae-a59f-8be2a351b57b)
+
+#### Querie 3:
+
+-- Set 'Gold' medal for athletes ranked 1st with no medal yet
+
+![image](https://github.com/user-attachments/assets/76ef1a06-f4ad-42d5-adbe-1441d4f46959)
+
+![image](https://github.com/user-attachments/assets/a49be373-db45-4806-b007-bdd0e4bd8a6f)
+
+Before:
+
+![image](https://github.com/user-attachments/assets/b70ca1a6-726a-4e4f-b3db-da1bdb4eb797)
+
+After:
+
+![image](https://github.com/user-attachments/assets/ea16884a-37c1-4521-be4c-345837c95d2f)
+
+### Delete Queries
+
+#### Querie 1:
+
+-- Delete tickets with card date before 2010
+
+![image](https://github.com/user-attachments/assets/329285e1-f0cb-45c5-9991-9342c560d7a8)
+
+![image](https://github.com/user-attachments/assets/57b8b8c5-dfe8-4284-9bc1-0e7e93f11364)
+
+Before:
+
+![image](https://github.com/user-attachments/assets/cb5d26cf-3532-4a2c-a8ed-291d8e907714)
+
+After:
+
+![image](https://github.com/user-attachments/assets/e8812baf-edd7-4fc9-81bf-e2a2e1261ae5)
+
+
+#### Querie 2:
+
+-- Delete athlete rankings lower than 15th place
+
+![image](https://github.com/user-attachments/assets/81ddcd43-aaee-47f7-b440-3fc16b007f21)
+
+![image](https://github.com/user-attachments/assets/22ebd8d1-8c8f-4cc4-bbed-3604acc03600)
+
+Before:
+
+![image](https://github.com/user-attachments/assets/90f9aa27-5fbb-4b0f-b2a3-83403208f1a1)
+
+After:
+
+![image](https://github.com/user-attachments/assets/77dde461-ffba-4544-a08b-81befda05d1c)
+
+
+#### Querie 3:
+
+-- Delete athletes who have no participation records
+
+![image](https://github.com/user-attachments/assets/0c529ea2-357c-453c-8b00-ca81cf6a544a)
+
+![image](https://github.com/user-attachments/assets/844835e1-e56c-47e8-a9a2-08352ad10fa4)
+
+Before:
+
+![image](https://github.com/user-attachments/assets/f5bf3c9d-dfe5-4af2-8dc9-b708aeb46e04)
+
+
+After:
+
+![image](https://github.com/user-attachments/assets/45acc22d-dbc6-416d-95fd-7838079f0a6b)
 
 
 

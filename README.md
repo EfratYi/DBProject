@@ -187,11 +187,11 @@ The query displays, in alphabetical order by country name, the number of athlete
 
 The query displays, in serial order according to the athlete's thesis, only the countries in which one athlete won a medal, and displays for him the highest medal he won.
 
-![image](https://github.com/user-attachments/assets/38aebe74-1806-45b1-ac26-3fae2c62d794)
+![image](https://github.com/user-attachments/assets/50817e9c-c661-403f-a510-34759ad2915e)
 
-![image](https://github.com/user-attachments/assets/9418d711-5595-486e-ad3a-bda5716e8f0e)
+![image](https://github.com/user-attachments/assets/4e70e002-7975-439e-98d6-7ec8df69088a)
 
-![image](https://github.com/user-attachments/assets/0276c60c-5c47-4032-b52d-826a33197c78)
+![image](https://github.com/user-attachments/assets/e57cedcd-16b3-4529-956f-f61ec2cc9d45)
 
 #### Querie 5:
 
@@ -222,6 +222,16 @@ A query that displays, in alphabetical order by country name, for each country t
 ![image](https://github.com/user-attachments/assets/0506c56a-0501-4c6a-b186-ccce037ab79c)
 
 ![image](https://github.com/user-attachments/assets/43328931-dfbf-4a6b-8271-4ff6ba8fe3e6)
+
+#### Querie 8:
+
+The query shows the number of tickets sold per venue per month, ordered by venue and descending ticket sales
+
+![image](https://github.com/user-attachments/assets/79d36734-9a4f-412e-bff2-0f8443f584cd)
+
+![image](https://github.com/user-attachments/assets/cce6fd00-5f5d-47c0-bc8c-802e6c00dbf4)
+
+![image](https://github.com/user-attachments/assets/30f0382a-4b3e-4d77-b783-bd74a643d3b8)
 
 
 ### Update Queries

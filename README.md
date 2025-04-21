@@ -14,10 +14,10 @@
 - [💾 Backup](#backup)  
 
 ### **Phase 2: Queries and constraints**  
-- [🔗 Queries](#Queries)
 - [🔗 Select Queries](#Select-Queries)
 - [🔗 Update Queries](#Update-Queries)
 - [🔗 Delete Queries](#Delete-Queries)
+- [🔗 Constraints](#Constraints)
 
 
 ## Phase 1: 
@@ -328,9 +328,39 @@ After:
 ![image](https://github.com/user-attachments/assets/45acc22d-dbc6-416d-95fd-7838079f0a6b)
 
 
+## Constraints
+
+### constraint 1:
+
+-- Make sure every venue has a location (no NULLs allowed in VenueLocation column)
+
+![image](https://github.com/user-attachments/assets/d82f4bd4-6896-4b63-bc6f-9158bfcafbf0)
+
+![image](https://github.com/user-attachments/assets/005eb89b-9344-4fa1-a759-016de0667c92)
+
+![image](https://github.com/user-attachments/assets/168a3140-1edd-495e-a9df-174a7c1ae349)
 
 
+### constraint 2:
 
+-- Ensure that TotalMedals in the Country table is never negative
+
+![image](https://github.com/user-attachments/assets/94f49a85-e7f8-4f08-93b6-32fb6e5cca47)
+
+![image](https://github.com/user-attachments/assets/e3203322-2d71-4c66-859b-54e7f7d85bf3)
+
+![image](https://github.com/user-attachments/assets/c245f612-b1f8-47e3-986f-317036bba9d0)
+
+
+### constraint 3:
+
+-- Set a default price of 100 for tickets when no price is specified
+
+![image](https://github.com/user-attachments/assets/05138727-9053-4f8c-907a-6121dbd18f49)
+
+![image](https://github.com/user-attachments/assets/756ca049-f68f-4bef-8eac-c9a9d1fca8e8)
+
+![image](https://github.com/user-attachments/assets/5c50cfb5-70dc-4e3a-a177-a5a37c15dc63)
 
 
 

@@ -1,0 +1,11 @@
+-- Make sure every venue has a location (no NULLs allowed in VenueLocation column)
+ALTER TABLE Venue
+ALTER COLUMN VenueLocation SET NOT NULL;
+
+-- Ensure that TotalMedals in the Country table is never negative
+ALTER TABLE Country
+ADD CONSTRAINT chk_TotalMedals_positive CHECK (TotalMedals >= 0);
+
+-- Set a default price of 100 for tickets when no price is specified
+ALTER TABLE Ticket
+ADD CONSTRAINT df_TicketPrice_default DEFAULT 100 FOR TicketPrice;

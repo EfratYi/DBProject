@@ -1,0 +1,30 @@
+-- Update total medals for each country based on actual wins
+UPDATE Country
+SET TotalMedals = (
+  SELECT COUNT(*)
+  FROM Athlete a
+  JOIN Relationship r ON a.AthleteID = r.AthleteID
+  WHERE a.CountryId = Country.CountryId AND r.Medal IS NOT NULL
+);
+
+-- Increase ticket prices by 20% for venues with capacity over 10,000
+UPDATE Ticket
+SET TicketPrice = TicketPrice * 1.2
+WHERE VenueID IN (
+  SELECT VenueID FROM Venue WHERE Capacity > 10000
+);
+
+-- Set 'Gold' medal for athletes ranked 1st with no medal yet
+UPDATE Relationship
+SET Medal = 'Gold'
+WHERE AthleteRank = 1 AND Medal IS NULL;
+
+-- Set 'Silver' medal for athletes ranked 2nd with no medal yet
+UPDATE Relationship
+SET Medal = 'Silver'
+WHERE AthleteRank = 2 AND Medal IS NULL;
+
+-- Set 'Bronze' medal for athletes ranked 3rd with no medal yet
+UPDATE Relationship
+SET Medal = 'Bronze'
+WHERE AthleteRank = 3 AND Medal IS NULL;

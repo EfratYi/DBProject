@@ -1,0 +1,13 @@
+-- Delete tickets with card date before 2010
+DELETE FROM Ticket
+WHERE EXTRACT(YEAR FROM CardDate) < 2010;
+
+-- Delete athlete rankings lower than 15th place
+DELETE FROM Relationship
+WHERE AthleteRank > 15;
+
+-- Delete athletes who have no participation records
+DELETE FROM Athlete
+WHERE AthleteID NOT IN (
+  SELECT DISTINCT AthleteID FROM Relationship
+);

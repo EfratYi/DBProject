@@ -1,12 +1,14 @@
--- 1. Athletes born after the year 2000 who won a medal, showing their highest medal
+
+-- 1. אתלטים שנולדו אחרי שנת 2000 וזכו במדליה, הצגת המדליה הגבוהה ביותר
+
 WITH RankedMedals AS (
-  SELECT
+  SELECT 
     a.AthleteID,
-    a.AthleteName,
-    a.Gender,
+    a.AthleteName, 
+    a.Gender, 
     c.CountryName,
     DATE_PART('year', AGE(CURRENT_DATE, a.Birthday)) AS Age,
-    MAX(CASE
+    MAX(CASE 
           WHEN r.Medal = 'Gold' THEN 3
           WHEN r.Medal = 'Silver' THEN 2
           WHEN r.Medal = 'Bronze' THEN 1
@@ -14,12 +16,12 @@ WITH RankedMedals AS (
   FROM Athlete a
   JOIN Relationship r ON a.AthleteID = r.AthleteID
   JOIN Country c ON a.CountryId = c.CountryId
-  WHERE EXTRACT(YEAR FROM a.Birthday) > 2000 AND r.Medal IS NOT NULL
+  WHERE EXTRACT(YEAR FROM a.Birthday) > 2000 And r.Medal IS NOT NULL
   GROUP BY a.AthleteID, a.AthleteName, a.Gender, c.CountryName, a.Birthday
 )
-SELECT
-  AthleteName,
-  Gender,
+SELECT 
+  AthleteName, 
+  Gender, 
   CountryName,
   Age,
   CASE BestMedalScore
@@ -31,7 +33,7 @@ FROM RankedMedals
 ORDER BY CountryName ASC;
 
 
--- 2. Number of athletes per country who participated in any competitions
+-- 2. מספר אתלטים לכל מדינה שהשתתפו בתחרויות כלשהן
 SELECT c.CountryName, COUNT(DISTINCT a.AthleteID) AS NumAthletes
 FROM Country c
 JOIN Athlete a ON c.CountryId = a.CountryId
@@ -39,9 +41,8 @@ JOIN Relationship r ON a.AthleteID = r.AthleteID
 GROUP BY c.CountryName
 ORDER BY NumAthletes DESC;
 
-
--- 3. Number of tickets sold per venue by month in the current year
-SELECT
+-- 3.  כמות כרטיסים לכל אולם בחודש מסוים לפי השנה הנוכחית
+SELECT 
   v.VenueName,
   TO_CHAR(t.CardDate, 'YYYY-MM') AS SaleMonth,
   COUNT(*) AS TicketsSold
@@ -52,8 +53,8 @@ GROUP BY v.VenueName, SaleMonth
 ORDER BY v.VenueName, TicketsSold DESC;
 
 
--- 4. Number of tickets sold per venue by month across all years
-SELECT
+-- 4.  כמות כרטיסים לכל אולם בחודש מסוים לפי כל השנים
+SELECT 
   v.VenueName,
   TO_CHAR(t.CardDate, 'FMMonth') AS MonthName,
   EXTRACT(MONTH FROM t.CardDate) AS MonthNumber,
@@ -63,25 +64,24 @@ JOIN Venue v ON t.VenueID = v.VenueID
 GROUP BY v.VenueName, MonthName, MonthNumber
 ORDER BY v.VenueName, TicketsSold DESC;
 
+-- 5.  כל ספורט עם מספר תחרויות שבוצעו בו מספר המקומות מספר המדליות
 
--- 5. Each sport with number of competitions held, number of venues, number of medals, and the earliest competition date
-SELECT
-    s.SportName,
-    COUNT(co.CompetitionId) AS NumCompetitions,
+SELECT 
+    s.SportName, 
+    COUNT(co.CompetitionId) AS NumCompetitions, 
     COUNT(DISTINCT v.VenueName) AS NumVenues,
     COUNT(r.Medal) AS NumMedals,
     MIN(co.CompDate) AS EarliestCompetitionDate
 FROM Sport s
 LEFT JOIN Competition co ON s.SportID = co.SportID
-LEFT JOIN Venue v ON co.VenueID = v.VenueID
+LEFT JOIN Venue v ON co.VenueID = v.VenueID 
 LEFT JOIN Relationship r ON co.CompetitionId = r.CompetitionId
 GROUP BY s.SportName
 ORDER BY s.SportName, MIN(co.CompDate);
 
-
--- 6. Top athletes in each country based on number of medals won
+-- 6.  הספורטאים המובילים מבחינת כמות המדליות שלהם במדינה.
 WITH MedalCounts AS (
-    SELECT
+    SELECT 
         a.AthleteID,
         a.AthleteName,
         c.CountryName,
@@ -104,47 +104,48 @@ WHERE rn = 1
 ORDER BY CountryName;
 
 
--- 7. The most popular venue for each sport based on number of competitions held
+-- 7.  האולם הכי פופלארי לכל ספורט.
+
 WITH CompetitionCount AS (
-    SELECT
-        Venue.VenueName,
-        Sport.SportName,
+    SELECT 
+        Venue.VenueName, 
+        Sport.SportName, 
         COUNT(Competition.CompetitionId) AS NumberOfCompetitions
-    FROM
+    FROM 
         Competition
-    JOIN
+    JOIN 
         Sport ON Competition.SportID = Sport.SportID
-    JOIN
+    JOIN 
         Venue ON Competition.VenueID = Venue.VenueID
-    GROUP BY
+    GROUP BY 
         Venue.VenueName, Sport.SportName
 )
-SELECT
-    SportName,
-    VenueName,
+SELECT 
+    SportName, 
+    VenueName, 
     NumberOfCompetitions
-FROM
+FROM 
     CompetitionCount
-WHERE
+WHERE 
     (SportName, NumberOfCompetitions) IN (
-        SELECT
-            SportName,
+        SELECT 
+            SportName, 
             MAX(NumberOfCompetitions)
-        FROM
+        FROM 
             CompetitionCount
-        GROUP BY
+        GROUP BY 
             SportName
     )
-ORDER BY
+ORDER BY 
     SportName;
 
+-- 8.  אתלטים שהם היחידים מהמדינה שלהם שזכו במדליה.
 
--- 8. Athletes who are the only ones from their country to have won a medal
 WITH CountryAthletes AS (
-  SELECT
-    c.CountryName,
-    a.AthleteID,
-    a.AthleteName,
+  SELECT 
+    c.CountryName, 
+    a.AthleteID, 
+    a.AthleteName, 
     r.Medal
   FROM Athlete a
   JOIN Country c ON a.CountryId = c.CountryId
@@ -152,26 +153,25 @@ WITH CountryAthletes AS (
   WHERE r.Medal IS NOT NULL
 ),
 UniqueCountry AS (
-  SELECT
+  SELECT 
     ca.CountryName
   FROM CountryAthletes ca
   GROUP BY ca.CountryName
-  HAVING COUNT(DISTINCT ca.AthleteID) = 1
+  HAVING COUNT(DISTINCT ca.AthleteID) = 1 
 ),
 RankedMedals AS (
-  SELECT
+  SELECT 
     ca.AthleteID,
     ca.AthleteName,
     ca.CountryName,
     ca.Medal,
     ROW_NUMBER() OVER (
-      PARTITION BY ca.AthleteID
-      ORDER BY
-        CASE ca.Medal
-          WHEN 'Gold' THEN 1
-          WHEN 'Silver' THEN 2
-          WHEN 'Bronze' THEN 3
-          ELSE 4
+      PARTITION BY ca.AthleteID 
+      ORDER BY 
+        CASE ca.Medal 
+          WHEN 'Gold' THEN 1 
+          WHEN 'Silver' THEN 2 
+          WHEN 'Bronze' THEN 3 
         END
     ) AS MedalRank
   FROM CountryAthletes ca

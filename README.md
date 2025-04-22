@@ -65,13 +65,13 @@ Create Tables Script - The SQL script for creating the database tables is availa
 📜 [View createTables.sql](stage1/script/createTables.sql)
 
 Insert Data Script - The SQL script for insert data to the database tables is available in the repository:
-📜 [View createTables.sql](stage1/script/insertTables.sql)
+📜 [View insertTables.sql](stage1/script/insertTables.sql)
 
 Drop Tables Script - The SQL script for droping all tables is available in the repository:
-📜 [View createTables.sql](stage1/script/dropTables.sql)
+📜 [View dropTables.sql](stage1/script/dropTables.sql)
 
 Select All Data Script - The SQL script for selectAll tables is available in the repository:
-📜 [View createTables.sql](stage1/script/selectTables.sql)
+📜 [View selectTables.sql](stage1/script/selectTables.sql)
 
 ## Data
 

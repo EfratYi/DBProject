@@ -1,5 +1,4 @@
 -- 1. Athletes born after the year 2000 who won a medal, showing their highest medal
-
 WITH RankedMedals AS (
   SELECT
     a.AthleteID,
@@ -30,3 +29,155 @@ SELECT
   END AS BestMedal
 FROM RankedMedals
 ORDER BY CountryName ASC;
+
+
+-- 2. Number of athletes per country who participated in any competitions
+SELECT c.CountryName, COUNT(DISTINCT a.AthleteID) AS NumAthletes
+FROM Country c
+JOIN Athlete a ON c.CountryId = a.CountryId
+JOIN Relationship r ON a.AthleteID = r.AthleteID
+GROUP BY c.CountryName
+ORDER BY NumAthletes DESC;
+
+
+-- 3. Number of tickets sold per venue by month in the current year
+SELECT
+  v.VenueName,
+  TO_CHAR(t.CardDate, 'YYYY-MM') AS SaleMonth,
+  COUNT(*) AS TicketsSold
+FROM Ticket t
+JOIN Venue v ON t.VenueID = v.VenueID
+WHERE EXTRACT(YEAR FROM t.CardDate) = EXTRACT(YEAR FROM CURRENT_DATE)
+GROUP BY v.VenueName, SaleMonth
+ORDER BY v.VenueName, TicketsSold DESC;
+
+
+-- 4. Number of tickets sold per venue by month across all years
+SELECT
+  v.VenueName,
+  TO_CHAR(t.CardDate, 'FMMonth') AS MonthName,
+  EXTRACT(MONTH FROM t.CardDate) AS MonthNumber,
+  COUNT(*) AS TicketsSold
+FROM Ticket t
+JOIN Venue v ON t.VenueID = v.VenueID
+GROUP BY v.VenueName, MonthName, MonthNumber
+ORDER BY v.VenueName, TicketsSold DESC;
+
+
+-- 5. Each sport with number of competitions held, number of venues, number of medals, and the earliest competition date
+SELECT
+    s.SportName,
+    COUNT(co.CompetitionId) AS NumCompetitions,
+    COUNT(DISTINCT v.VenueName) AS NumVenues,
+    COUNT(r.Medal) AS NumMedals,
+    MIN(co.CompDate) AS EarliestCompetitionDate
+FROM Sport s
+LEFT JOIN Competition co ON s.SportID = co.SportID
+LEFT JOIN Venue v ON co.VenueID = v.VenueID
+LEFT JOIN Relationship r ON co.CompetitionId = r.CompetitionId
+GROUP BY s.SportName
+ORDER BY s.SportName, MIN(co.CompDate);
+
+
+-- 6. Top athletes in each country based on number of medals won
+WITH MedalCounts AS (
+    SELECT
+        a.AthleteID,
+        a.AthleteName,
+        c.CountryName,
+        a.CountryId,
+        COUNT(r.Medal) AS MedalCount
+    FROM Athlete a
+    JOIN Country c ON a.CountryId = c.CountryId
+    JOIN Relationship r ON a.AthleteID = r.AthleteID
+    WHERE r.Medal IS NOT NULL
+    GROUP BY a.AthleteID, a.AthleteName, c.CountryName, a.CountryId
+),
+RankedMedals AS (
+    SELECT *,
+           ROW_NUMBER() OVER (PARTITION BY CountryId ORDER BY MedalCount DESC, AthleteName) AS rn
+    FROM MedalCounts
+)
+SELECT AthleteName, CountryName, MedalCount
+FROM RankedMedals
+WHERE rn = 1
+ORDER BY CountryName;
+
+
+-- 7. The most popular venue for each sport based on number of competitions held
+WITH CompetitionCount AS (
+    SELECT
+        Venue.VenueName,
+        Sport.SportName,
+        COUNT(Competition.CompetitionId) AS NumberOfCompetitions
+    FROM
+        Competition
+    JOIN
+        Sport ON Competition.SportID = Sport.SportID
+    JOIN
+        Venue ON Competition.VenueID = Venue.VenueID
+    GROUP BY
+        Venue.VenueName, Sport.SportName
+)
+SELECT
+    SportName,
+    VenueName,
+    NumberOfCompetitions
+FROM
+    CompetitionCount
+WHERE
+    (SportName, NumberOfCompetitions) IN (
+        SELECT
+            SportName,
+            MAX(NumberOfCompetitions)
+        FROM
+            CompetitionCount
+        GROUP BY
+            SportName
+    )
+ORDER BY
+    SportName;
+
+
+-- 8. Athletes who are the only ones from their country to have won a medal
+WITH CountryAthletes AS (
+  SELECT
+    c.CountryName,
+    a.AthleteID,
+    a.AthleteName,
+    r.Medal
+  FROM Athlete a
+  JOIN Country c ON a.CountryId = c.CountryId
+  JOIN Relationship r ON a.AthleteID = r.AthleteID
+  WHERE r.Medal IS NOT NULL
+),
+UniqueCountry AS (
+  SELECT
+    ca.CountryName
+  FROM CountryAthletes ca
+  GROUP BY ca.CountryName
+  HAVING COUNT(DISTINCT ca.AthleteID) = 1
+),
+RankedMedals AS (
+  SELECT
+    ca.AthleteID,
+    ca.AthleteName,
+    ca.CountryName,
+    ca.Medal,
+    ROW_NUMBER() OVER (
+      PARTITION BY ca.AthleteID
+      ORDER BY
+        CASE ca.Medal
+          WHEN 'Gold' THEN 1
+          WHEN 'Silver' THEN 2
+          WHEN 'Bronze' THEN 3
+          ELSE 4
+        END
+    ) AS MedalRank
+  FROM CountryAthletes ca
+  JOIN UniqueCountry uc ON ca.CountryName = uc.CountryName
+)
+SELECT AthleteID, AthleteName, CountryName, Medal
+FROM RankedMedals
+WHERE MedalRank = 1  
+ORDER BY AthleteID;

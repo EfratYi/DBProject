@@ -153,7 +153,7 @@ results in pgsadmin:
 
 ### Select Queries
 
-📜 [View selectQueries.sql](stage2/selectQueries.sql)
+📜 [View selectQueries.sql](stage2/selectQueries.sql‏)
 
 #### Querie 1:
 
@@ -239,7 +239,7 @@ The query shows the number of tickets sold per venue per month, ordered by venue
 
 ### Update Queries
 
-📜 [View updateQueries.sql](stage2/updateQueries.sql)
+📜 [View updateQueries.sql](stage2/updateQueries.sql‏)
 
 #### Querie 1:
 
@@ -291,7 +291,7 @@ After:
 
 ### Delete Queries
 
-📜 [View deleteQueries.sql](stage2/deleteQueries.sql)
+📜 [View deleteQueries.sql](stage2/deleteQueries.sql‏)
 
 #### Querie 1:
 
@@ -347,7 +347,7 @@ After:
 
 ## Constraints
 
-📜 [View Constraints.sql](stage2/Constraints.sql)
+📜 [View Constraints.sql](stage2/Constraints.sql‏)
 
 ### constraint 1:
 

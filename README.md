@@ -153,9 +153,12 @@ results in pgsadmin:
 
 ### Select Queries
 
+📜 [View selectQueries.sql](stage2/selectQueries.sql)
+
 #### Querie 1:
 
 The query displays, in alphabetical order by country, for each athlete born after the year 2000 the highest medal they won... (athletes without a medal will not be displayed)
+
 
 ![image](https://github.com/user-attachments/assets/f2cbb890-fa31-4b20-9a39-95ca8de0637c)
 
@@ -236,6 +239,8 @@ The query shows the number of tickets sold per venue per month, ordered by venue
 
 ### Update Queries
 
+📜 [View updateQueries.sql](stage2/updateQueries.sql)
+
 #### Querie 1:
 
 -- Update total medals for each country based on actual wins
@@ -285,6 +290,8 @@ After:
 ![image](https://github.com/user-attachments/assets/ea16884a-37c1-4521-be4c-345837c95d2f)
 
 ### Delete Queries
+
+📜 [View deleteQueries.sql](stage2/deleteQueries.sql)
 
 #### Querie 1:
 
@@ -339,6 +346,8 @@ After:
 
 
 ## Constraints
+
+📜 [View Constraints.sql](stage2/Constraints.sql)
 
 ### constraint 1:
 

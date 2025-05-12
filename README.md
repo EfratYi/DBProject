@@ -19,10 +19,13 @@
 - [🔗 Delete Queries](#Delete-Queries)
 - [🔗 Constraints](#Constraints)
 
-### **Phase 3: The integration phase, building the unified database**  
+### **Phase 3: Integration and Views**  
 - [📊 ERD (Entity-Relationship Diagram)](#erd-entity-relationship-diagram)
 - [📂 DSD (Data Structure Diagram)](#dsd-data-structure-diagram)
-- 
+- [🔄 Database Integration Phase](#-Database-Integration-Phase)
+
+
+
 ## Phase 1: 
 Design and Build the Database
 
@@ -384,7 +387,59 @@ After:
 
 ![image](https://github.com/user-attachments/assets/5c50cfb5-70dc-4e3a-a177-a5a37c15dc63)
 
-## Phase 3: Queries and constraints
+## Phase 3: Integration and Views
+
+## ERD (Entity-Relationship Diagram)
+
+![image](https://github.com/user-attachments/assets/37fac9a2-a691-4015-b055-d5e4e23eddc5)
+
+## DSD (Data Structure Diagram)
+
+![image](https://github.com/user-attachments/assets/69b222d1-15ff-4236-8133-233de673d6a2)
+
+## 🔄 Database Integration Phase
+
+During this stage, two separate databases were merged into one unified schema. The goal was to consolidate the data, normalize entities, and ensure the resulting structure supports both current and future needs of the system.
+
+### 🧾 Description of the Integration Process
+Below is a breakdown of the changes and SQL commands that were executed during the merge.
+
+#### 🏁 Step 1: Extending Existing Tables
+Added CompetitionType to classify competitions as individual or team-based.
+
+Added foreign keys to associate competitions with referees and tournaments.
+
+Added fields to Athlete to support player-specific attributes (e.g., TeamID, Position, etc.)
+
+#### 🏗️ Step 2: Relationship Table Creation
+Created the TeamComp junction table to represent the many-to-many relationship between teams and competitions
+
+#### 🧱 Step 3: Schema Restructuring
+Renamed NationalTeam to Team.
+
+Removed the TeamCountry column and replaced it with a foreign key to the Country table.
+
+Updated the Ticket table to reference Competition instead of Venue.
+
+#### 🧹 Step 4: Cleanup of Legacy Tables
+Dropped unused or replaced tables such as Officiated_by, Game, Player, and Compets.
+
+#### 📊 Step 5: Populating Missing Data
+Assigned unique CountryId values to teams that were missing one.
+
+Created random associations between teams and competitions using ranking functions.
+
+Updated tickets with competition references using randomized matching.
+
+Set the CompetitionType field based on whether the competition involved teams or not.
+
+Assigned missing referees and tournaments to competitions.
+
+#### To the SQL Code📜 [View Integrate.sql](stage1/generateData/generatedata.csv) && 📜[View tablesUpdate.sql](stage1/generateData/generatedata.csv)
+
+
+
+
 
 
 

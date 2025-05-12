@@ -435,7 +435,7 @@ Set the CompetitionType field based on whether the competition involved teams or
 
 Assigned missing referees and tournaments to competitions.
 
-#### To the SQL Code📜 [View Integrate.sql](stage1/generateData/generatedata.csv) && 📜[View tablesUpdate.sql](stage1/generateData/generatedata.csv)
+#### To the SQL Code📜 [View Integrate.sql](stag3/Integrate.sql) && 📜[View tablesUpdate.sql](stage1/generateData/generatedata.csv)
 
 
 

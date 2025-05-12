@@ -397,6 +397,12 @@ After:
 
 ![image](https://github.com/user-attachments/assets/69b222d1-15ff-4236-8133-233de673d6a2)
 
+
+**You can see the ERD DSD diagrams of the new wing:**
+
+**ERD-👉[View newERD.png](stage3/newERD.png)**
+**DSD-👉[View newDSD.png](stage3/newDSD.png)**
+
 ## 🔄 Database Integration Phase
 
 During this stage, two separate databases were merged into one unified schema. The goal was to consolidate the data, normalize entities, and ensure the resulting structure supports both current and future needs of the system.

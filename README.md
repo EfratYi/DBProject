@@ -19,7 +19,10 @@
 - [🔗 Delete Queries](#Delete-Queries)
 - [🔗 Constraints](#Constraints)
 
-
+### **Phase 3: The integration phase, building the unified database**  
+- [📊 ERD (Entity-Relationship Diagram)](#erd-entity-relationship-diagram)
+- [📂 DSD (Data Structure Diagram)](#dsd-data-structure-diagram)
+- 
 ## Phase 1: 
 Design and Build the Database
 
@@ -381,7 +384,7 @@ After:
 
 ![image](https://github.com/user-attachments/assets/5c50cfb5-70dc-4e3a-a177-a5a37c15dc63)
 
-
+## Phase 3: Queries and constraints
 
 
 

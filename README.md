@@ -408,11 +408,11 @@ results:
 
 ## Integration ERD (Entity-Relationship Diagram)
 
-![image](https://github.com/user-attachments/assets/7c8956e0-9719-400e-a6ff-358549ee0f40)
+![image](https://github.com/user-attachments/assets/ce6868dc-23f7-4273-9a0a-4e62b74280c1)
 
 ## Integration DSD (Data Structure Diagram)
 
-![image](https://github.com/user-attachments/assets/390d17fe-18db-4dca-8623-a8552617fc13)
+![image](https://github.com/user-attachments/assets/e4353f82-cb74-44e0-9a21-dc78f708d3f4)
 
 
 

@@ -3,7 +3,7 @@ UPDATE Country
 SET TotalMedals = (
   SELECT COUNT(*)
   FROM Athlete a
-  JOIN Relationship r ON a.AthleteID = r.AthleteID
+  JOIN AthleteCompetition r ON a.AthleteID = r.AthleteID
   WHERE a.CountryId = Country.CountryId AND r.Medal IS NOT NULL
 );
 
@@ -15,16 +15,16 @@ WHERE VenueID IN (
 );
 
 -- Set 'Gold' medal for athletes ranked 1st with no medal yet
-UPDATE Relationship
+UPDATE AthleteCompetition
 SET Medal = 'Gold'
 WHERE AthleteRank = 1 AND Medal IS NULL;
 
 -- Set 'Silver' medal for athletes ranked 2nd with no medal yet
-UPDATE Relationship
+UPDATE AthleteCompetition
 SET Medal = 'Silver'
 WHERE AthleteRank = 2 AND Medal IS NULL;
 
 -- Set 'Bronze' medal for athletes ranked 3rd with no medal yet
-UPDATE Relationship
+UPDATE AthleteCompetition
 SET Medal = 'Bronze'
 WHERE AthleteRank = 3 AND Medal IS NULL;

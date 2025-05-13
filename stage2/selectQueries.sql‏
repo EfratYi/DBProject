@@ -89,7 +89,7 @@ WITH MedalCounts AS (
         COUNT(r.Medal) AS MedalCount
     FROM Athlete a
     JOIN Country c ON a.CountryId = c.CountryId
-    JOIN Relationship r ON a.AthleteID = r.AthleteID
+    JOIN athletecompetition r ON a.AthleteID = r.AthleteID
     WHERE r.Medal IS NOT NULL
     GROUP BY a.AthleteID, a.AthleteName, c.CountryName, a.CountryId
 ),

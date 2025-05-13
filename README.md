@@ -21,8 +21,8 @@
 
 ### **Phase 3: Integration and Views**  
 -[🔍Checking out the new wing](#Checking-out-the-new-wing)
-- [📊 ERD (Entity-Relationship Diagram)](#erd-entity-relationship-diagram)
-- [📂 DSD (Data Structure Diagram)](#dsd-data-structure-diagram)
+- [📊 Integration ERD (Entity-Relationship Diagram)](#erd-entity-relationship-diagram)
+- [📂 Integration DSD (Data Structure Diagram)](#dsd-data-structure-diagram)
 - [🔄 Database Integration Phase](#-Database-Integration-Phase)
 
 
@@ -392,20 +392,29 @@ After:
 
 ## Checking out the new wing
 
+After running the queries for the new wing on the backup we uploaded, everything worked properly.
 
-## ERD (Entity-Relationship Diagram)
+results:
 
-![image](https://github.com/user-attachments/assets/37fac9a2-a691-4015-b055-d5e4e23eddc5)
+![image](https://github.com/user-attachments/assets/db3ab626-9499-4e52-9015-dadce09406a6)
 
-## DSD (Data Structure Diagram)
-
-![image](https://github.com/user-attachments/assets/69b222d1-15ff-4236-8133-233de673d6a2)
+![image](https://github.com/user-attachments/assets/939300b8-fb91-4730-a6d3-84084e39bd73)
 
 
 **You can see the ERD DSD diagrams of the new wing:**
 
 **ERD-👉[View newERD.png](stage3/newERD.png)**
 **DSD-👉[View newDSD.png](stage3/newDSD.png)**
+
+## Integration ERD (Entity-Relationship Diagram)
+
+![image](https://github.com/user-attachments/assets/7c8956e0-9719-400e-a6ff-358549ee0f40)
+
+## Integration DSD (Data Structure Diagram)
+
+![image](https://github.com/user-attachments/assets/390d17fe-18db-4dca-8623-a8552617fc13)
+
+
 
 ## 🔄 Database Integration Phase
 
@@ -444,6 +453,11 @@ Updated tickets with competition references using randomized matching.
 Set the CompetitionType field based on whether the competition involved teams or not.
 
 Assigned missing referees and tournaments to competitions.
+
+**After Integration👉**
+
+![image](https://github.com/user-attachments/assets/6fc4104e-d421-44af-afe6-605764bcd70b)
+
 
 #### To the SQL Code📜 [View Integrate.sql](stage3/Integrate.sql) 
 #### && 📜[View tablesUpdate.sql](stage1/generateData/generatedata.csv)

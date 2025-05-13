@@ -1,3 +1,5 @@
+
+
 CREATE TABLE Sport (
   SportID INT PRIMARY KEY NOT NULL,
   SportName VARCHAR(50) NOT NULL,
@@ -44,7 +46,7 @@ CREATE TABLE Ticket (
   FOREIGN KEY (VenueID) REFERENCES Venue(VenueID)
 );
 
-CREATE TABLE Relationship (
+CREATE TABLE AthleteCompetition (
   AthleteRank INT NOT NULL,
   Medal VARCHAR(50),
   CompetitionId INT NOT NULL,

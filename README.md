@@ -20,6 +20,7 @@
 - [🔗 Constraints](#Constraints)
 
 ### **Phase 3: Integration and Views**  
+-[🔍Checking out the new wing](#Checking-out-the-new-wing)
 - [📊 ERD (Entity-Relationship Diagram)](#erd-entity-relationship-diagram)
 - [📂 DSD (Data Structure Diagram)](#dsd-data-structure-diagram)
 - [🔄 Database Integration Phase](#-Database-Integration-Phase)
@@ -59,10 +60,10 @@ This database serves as a structured and reliable solution for managing Olympiad
 This structured database streamlines Olympiad management, enhancing organization, record-keeping, and accessibility for all involved.
 
 ## ERD (Entity-Relationship Diagram)
-![image](https://github.com/user-attachments/assets/a13786b5-c262-4ed1-9c62-8c83885ab3d9)
+![ERD](https://github.com/user-attachments/assets/289962f2-f5dd-435a-af8c-5b1d96bf7bb7)
 
 ## DSD (Data Structure Diagram)
-![DSD](https://github.com/user-attachments/assets/d2b49d11-fa2b-4304-89a2-a6e12675b3b5)
+![DSD](https://github.com/user-attachments/assets/7f38192a-5d52-4c69-9215-d6be067e252c)
 
 ## SQL Scripts
 Provide the following SQL scripts:
@@ -388,6 +389,9 @@ After:
 ![image](https://github.com/user-attachments/assets/5c50cfb5-70dc-4e3a-a177-a5a37c15dc63)
 
 ## Phase 3: Integration and Views
+
+## Checking out the new wing
+
 
 ## ERD (Entity-Relationship Diagram)
 

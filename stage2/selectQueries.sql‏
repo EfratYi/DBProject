@@ -14,7 +14,7 @@ WITH RankedMedals AS (
           WHEN r.Medal = 'Bronze' THEN 1
         END) AS BestMedalScore
   FROM Athlete a
-  JOIN Relationship r ON a.AthleteID = r.AthleteID
+  JOIN AthleteCompetition r ON a.AthleteID = r.AthleteID
   JOIN Country c ON a.CountryId = c.CountryId
   WHERE EXTRACT(YEAR FROM a.Birthday) > 2000 And r.Medal IS NOT NULL
   GROUP BY a.AthleteID, a.AthleteName, a.Gender, c.CountryName, a.Birthday
@@ -37,7 +37,7 @@ ORDER BY CountryName ASC;
 SELECT c.CountryName, COUNT(DISTINCT a.AthleteID) AS NumAthletes
 FROM Country c
 JOIN Athlete a ON c.CountryId = a.CountryId
-JOIN Relationship r ON a.AthleteID = r.AthleteID
+JOIN AthleteCompetition r ON a.AthleteID = r.AthleteID
 GROUP BY c.CountryName
 ORDER BY NumAthletes DESC;
 
@@ -75,7 +75,7 @@ SELECT
 FROM Sport s
 LEFT JOIN Competition co ON s.SportID = co.SportID
 LEFT JOIN Venue v ON co.VenueID = v.VenueID 
-LEFT JOIN Relationship r ON co.CompetitionId = r.CompetitionId
+LEFT JOIN AthleteCompetition r ON co.CompetitionId = r.CompetitionId
 GROUP BY s.SportName
 ORDER BY s.SportName, MIN(co.CompDate);
 
@@ -149,7 +149,7 @@ WITH CountryAthletes AS (
     r.Medal
   FROM Athlete a
   JOIN Country c ON a.CountryId = c.CountryId
-  JOIN Relationship r ON a.AthleteID = r.AthleteID
+  JOIN AthleteCompetition r ON a.AthleteID = r.AthleteID
   WHERE r.Medal IS NOT NULL
 ),
 UniqueCountry AS (
@@ -172,6 +172,7 @@ RankedMedals AS (
           WHEN 'Gold' THEN 1 
           WHEN 'Silver' THEN 2 
           WHEN 'Bronze' THEN 3 
+          ELSE 4 
         END
     ) AS MedalRank
   FROM CountryAthletes ca

@@ -443,24 +443,25 @@ Updated the Ticket table to reference Competition instead of Venue.
 #### 🧹 Step 4: Cleanup of Legacy Tables
 Dropped unused or replaced tables such as Officiated_by, Game, Player, and Compets.
 
-#### 📊 Step 5: Populating Missing Data
-Assigned unique CountryId values to teams that were missing one.
+### 📊 Step 5: Migrating Existing Data
 
-Created random associations between teams and competitions using ranking functions.
+👉 Data from tables (Player, Game, and Compets) was migrated into the new schema without loss.
 
-Updated tickets with competition references using randomized matching.
+**Player → Athlete** : All players were inserted into the Athlete table, with relevant fields such as name, height, jersey number, and position preserved. New identifiers were generated automatically using sequences.
 
-Set the CompetitionType field based on whether the competition involved teams or not.
+**Compets → TeamComp** : Team participation data and scores were transferred into the new TeamComp table, maintaining the link between teams and competitions.
 
-Assigned missing referees and tournaments to competitions.
+**Game → Competition** : Game records were converted into Competition entries, with dates and tournament references preserved. A sequence ensured continuity in competition IDs.
+
+👉 After verifying the data, the original tables were removed from the schema to complete the integration.
 
 **After Integration👉**
 
-![image](https://github.com/user-attachments/assets/6fc4104e-d421-44af-afe6-605764bcd70b)
+![image](https://github.com/user-attachments/assets/c09ad627-4cea-44c6-98af-0bd2c6d5942e)
 
 
 #### To the SQL Code📜 [View Integrate.sql](stage3/Integrate.sql) 
-#### && 📜[View tablesUpdate.sql](stage1/generateData/generatedata.csv)
+#### && 📜[View JoiningTableDataCommands.sql](stage3/JoiningTableDataCommands.sql)
 
 
 

@@ -24,6 +24,7 @@
 - [📊 Integration ERD (Entity-Relationship Diagram)](#erd-entity-relationship-diagram)
 - [📂 Integration DSD (Data Structure Diagram)](#dsd-data-structure-diagram)
 - [🔄 Database Integration Phase](#-Database-Integration-Phase)
+- [📄 Views](#views)
 
 
 
@@ -464,11 +465,67 @@ Dropped unused or replaced tables such as Officiated_by, Game, Player, and Compe
 #### && 📜[View JoiningTableDataCommands.sql](stage3/JoiningTableDataCommands.sql)
 
 
+## 📄Views
+
+**📄 View: TeamAthleteCoach**
+
+**📝 Description:**
+
+The TeamAthleteCoach view combines data from the Team, Athlete, and Coach tables. It provides a clear snapshot of each athlete, the team they belong to, and the coach responsible for that team. This view is helpful for displaying the full relationship between athletes, their teams, and coaching staff.
+
+**🔍 Sample Data Query (10 rows):**
+
+![image](https://github.com/user-attachments/assets/9b35392b-7b9a-44bc-9b22-051c43442912)
+
+**🔎 Query 1: List of athletes with their team and coach**
+
+**Description:**
+
+This query retrieves the full list of athletes along with their team name and the coach’s full name.
+
+![image](https://github.com/user-attachments/assets/2dbdcb16-e31d-4152-8d73-9c5729f89a55)
+
+![image](https://github.com/user-attachments/assets/7b553795-381a-43c6-88e3-e65578ee4ac9)
+
+**🔎 Query 2: Number of athletes per coach**
+
+**Description:**
+
+This query counts how many athletes are assigned under each coach.
+
+![image](https://github.com/user-attachments/assets/d94d7fac-b899-4956-b86c-647641ba8d3c)
+
+![image](https://github.com/user-attachments/assets/81b848be-fbdd-4d48-957e-c97631f10a19)
 
 
+**📄 View: AthletesWithMedals**
 
+**📝 Description:**
 
+The AthletesWithMedals view combines information from multiple tables to present a comprehensive overview of athletes who have won medals. It includes details such as the athlete's name, gender, nationality, the medal they won, the sport, and the date of the competition. This view only includes records where a medal was awarded.
 
+**🔍 Sample Data Query (10 rows):**
 
+![image](https://github.com/user-attachments/assets/77a98ed9-13df-42f8-a355-903c6d0476d9)
+
+**🔎 Query 1: Number of gold medals by country**
+
+**📝 Description:**
+
+This query counts how many gold medals were won by athletes from each country.
+
+![image](https://github.com/user-attachments/assets/0fc0e7dc-c7a1-4e48-b921-f93a26f31aa5)
+
+![image](https://github.com/user-attachments/assets/50af49e8-7df3-4d80-a6b0-e0a77aea26e0)
+
+**🔎 Query 2: Medals won after 2020**
+
+**📝 Description:**
+
+This query shows a list of athletes who won medals after 2020, including the sport and competition date, sorted from most recent.
+
+![image](https://github.com/user-attachments/assets/2326b697-8989-4132-9ec0-22485e8b36a1)
+
+##📜to the views code [View Integrate.sql](stage3/Integrate.sql) 
 
 

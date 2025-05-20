@@ -8,10 +8,10 @@ SELECT setval('athlete_athleteid_seq', (SELECT COALESCE(MAX(athleteid), 0) FROM 
 INSERT INTO Athlete (
   teamid,
   isplayer,
-  "Athleteheight",
-  "Athletejerseynum",
+  "athleteheight",
+  "athletejerseynum",
   athletename,
-  "Athleteposition",
+  "athleteposition",
   birthday,
   countryid,
   gender

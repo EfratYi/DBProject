@@ -526,6 +526,6 @@ This query shows a list of athletes who won medals after 2020, including the spo
 
 ![image](https://github.com/user-attachments/assets/2326b697-8989-4132-9ec0-22485e8b36a1)
 
-##📜to the views code [View Integrate.sql](stage3/Integrate.sql) 
+##📜to the views code [View views.sql](stage3/views.sql) 
 
 

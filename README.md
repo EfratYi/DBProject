@@ -21,7 +21,7 @@
 
 ### **Phase 3: Integration and Views**  
 -[🔍Checking out the new wing](#Checking-out-the-new-wing)
-- [📊 Integration ERD (Entity-Relationship Diagram)](#erd-entity-relationship-diagram)
+- [📊 Integration ERD (Entity-Relationship Diagram)](#erd-entity-relationship-diagram-)
 - [📂 Integration DSD (Data Structure Diagram)](#dsd-data-structure-diagram)
 - [🔄 Database Integration Phase](#-Database-Integration-Phase)
 - [📄 Views](#views)
@@ -407,7 +407,7 @@ results:
 **ERD-👉[View newERD.png](stage3/newERD.png)**
 **DSD-👉[View newDSD.png](stage3/newDSD.png)**
 
-## Integration ERD (Entity-Relationship Diagram)
+## Integration ERD (Entity-Relationship Diagram-)
 
 ![image](https://github.com/user-attachments/assets/ce6868dc-23f7-4273-9a0a-4e62b74280c1)
 

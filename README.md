@@ -26,6 +26,10 @@
 - [🔄 Database Integration Phase](#-Database-Integration-Phase)
 - [📄 Views](#views)
 
+### **Phase 4: PL/pgSQL Programming**  
+-[⚙️ Main Function1](#Main-Function-1)
+-[⚙️ Main Function2](#Main-Function-2)
+
 
 
 ## Phase 1: 
@@ -528,4 +532,48 @@ This query shows a list of athletes who won medals after 2020, including the spo
 
 ##📜to the views code [View views.sql](stage3/views.sql) 
 
+## Phase 4: PL/pgSQL Programming
+
+### Main Function 1
+
+**1-Procedure: update_medal_count_by_country**
+📌Purpose:
+This procedure iterates through all countries using an explicit cursor, calculates the total number of medals won by athletes representing each country, and updates the totalmedals column in the country table accordingly.
+
+**2-Function: get_top_athletes_by_country**
+📌 Purpose:
+This function calculates the average score for a specific team based on its performance in the TeamComp table.
+
+**Running the code:**
+
+![image](https://github.com/user-attachments/assets/a5517fad-14ee-4c66-b2f1-243171b9d3a3)
+
+**Database-before**
+
+![image](https://github.com/user-attachments/assets/a4d72e7c-e6f2-4782-86de-c59b581ad0a3)
+
+**Database-after**
+
+![image](https://github.com/user-attachments/assets/0fb35a45-956e-4244-93d6-c4e1a3b5b408)
+
+
+##📜to the function code [View views.sql](stage3/views.sql) 
+
+##📜to the Procedure code [View views.sql](stage3/views.sql) 
+
+### Main Function 2
+
+**1-Procedure: update_medal_count_by_country**
+
+**2-Function: get_top_athletes_by_country**
+
+**Running the code:**
+
+**Database-before**
+
+**Database-after**
+
+##📜to the function code [View views.sql](stage3/views.sql) 
+
+##📜to the Procedure code [View views.sql](stage3/views.sql) 
 

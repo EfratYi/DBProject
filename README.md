@@ -537,10 +537,12 @@ This query shows a list of athletes who won medals after 2020, including the spo
 ### Main Function 1
 
 **1-Procedure: update_medal_count_by_country**
+
 📌Purpose:
 This procedure iterates through all countries using an explicit cursor, calculates the total number of medals won by athletes representing each country, and updates the totalmedals column in the country table accordingly.
 
 **2-Function: get_top_athletes_by_country**
+
 📌 Purpose:
 This function calculates the average score for a specific team based on its performance in the TeamComp table.
 
@@ -557,23 +559,61 @@ This function calculates the average score for a specific team based on its perf
 ![image](https://github.com/user-attachments/assets/0fb35a45-956e-4244-93d6-c4e1a3b5b408)
 
 
-##📜to the function code [View views.sql](stage3/views.sql) 
+##📜to the function1 code [View function1.sql](stage4/function1.sql) 
 
-##📜to the Procedure code [View views.sql](stage3/views.sql) 
+##📜to the Procedure1 code [View procedure1.sql](stage4/procedure1.sql) 
 
 ### Main Function 2
 
 **1-Procedure: update_medal_count_by_country**
 
+📌 Purpose:
+This procedure finds all competitions (Competition) that do not yet have a referee assigned (RefereeID IS NULL). For each such competition, it selects a random referee from the Referee table and updates the RefereeID field.
+
 **2-Function: get_top_athletes_by_country**
+
+📌 Purpose:
+This function receives a country ID and returns a list of athletes from that country, sorted by the number of competitions in which they won a medal.
 
 **Running the code:**
 
+![image](https://github.com/user-attachments/assets/3184b360-8443-4b1f-99d6-5e3cfd69a366)
+
 **Database-before**
+
+![image](https://github.com/user-attachments/assets/7b2c13b9-764a-4978-803c-141916566032)
 
 **Database-after**
 
-##📜to the function code [View views.sql](stage3/views.sql) 
+![image](https://github.com/user-attachments/assets/b1494bb6-106f-4eed-8de4-867e01c557b3)
 
-##📜to the Procedure code [View views.sql](stage3/views.sql) 
+##📜to the function2 code [View function2.sql](stage4/function2.sql) 
+
+##📜to the Procedure2 code [View procedure2.sql](stage4/procedure2.sql) 
+
+### Triggers
+
+**trigger 1:**
+
+📌 Purpose:
+To prevent invalid data from being inserted into the Ticket table and ensure that all tickets have a valid, positive price.
+
+**Error-message**
+
+![image](https://github.com/user-attachments/assets/4f0120eb-8397-4d03-9b77-6c60ff94750c)
+
+##📜to the trigger1 code [View trigger1.sql](stage4/trigger1.sql) 
+
+
+**trigger 2:**
+
+📌 Purpose:
+To ensure that all team rankings remain within a valid range (1–100) during updates, while still allowing the operation to proceed. This protects data quality without interrupting user workflows.
+
+**Error-message**
+
+![image](https://github.com/user-attachments/assets/d2392c38-896c-4f20-9e47-cad627f74f14)
+
+##📜to the trigger2 code [View trigger2.sql](stage4/trigger2.sql) 
+
 

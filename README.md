@@ -401,7 +401,7 @@ After running the queries for the new wing on the backup we uploaded, everything
 
 results:
 
-![image](https://github.com/user-attachments/assets/db3ab626-9499-4e52-9015-dadce09406a6)
+![image](https://github.com/user-attachments/assets/1f7f65be-68ae-4f1b-8b98-18a416011cca)
 
 ![image](https://github.com/user-attachments/assets/939300b8-fb91-4730-a6d3-84084e39bd73)
 

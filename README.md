@@ -19,26 +19,27 @@
 - [⛓️ Constraints](#constraints)  
 
 ### 🧠 Phase 3: Integration and Views  
-- [🏗️ Checking Out the New Wing](#checking-out-the-new-wing)  
-- [🧩 Integration ERD](#integration-erd)  
-- [📂 Integration DSD](#integration-dsd)  
-- [🔄 Database Integration Phase](#database-integration-phase)  
-- [🪟 Views](#views)  
+- [🏗️ Checking out the new wing](#checking-out-the-new-wing)  
+- [🧩 Integration ERD (Entity-Relationship Diagram-)](#integration-erd-entity-relationship-diagram-)  
+- [📂 Integration DSD (Data Structure Diagram)](#integration-dsd-data-structure-diagram)  
+- [🔄 Database Integration Phase](#-database-integration-phase)  
+- [📄 Views](#views)  
 
 ### ⚙️ Phase 4: PL/pgSQL Programming  
-- [🧮 Main Function1](#main-function1)  
-- [🧮 Main Function2](#main-function2)  
-- [🔧 Procedures](#procedures)  
-- [📈 Triggers and Logs](#triggers-and-logs)  
+- [🧮 Main Function 1](#main-function-1)  
+- [🧮 Main Function 2](#main-function-2)  
+- [🔧 Triggers](#triggers)  
 
-### 🧪 Phase 5: Final Web App and Documentation  
-- [🚀 How to Run the Application](#how-to-run-the-application)  
-- [🛠️ Technologies and Tools Used](#technologies-and-tools-used)  
-- [🧠 Project Overview](#project-overview)  
-  - [📦 Main Modules](#main-modules)  
-  - [🧮 Advanced SQL Features](#advanced-sql-features)  
-- [📸 Screenshots](#screenshots)  
-- [📝 Notes](#notes)
+### 🏆 Stage 5: Olympics Management System  
+- [🚀 How to Run the Application](#-how-to-run-the-application)  
+- [🛠️ Technologies and Tools Used](#-technologies-and-tools-used)  
+- [🧠 Project Overview](#-project-overview)  
+  - [📦 Main Modules](#-main-modules)  
+  - [🧮 Advanced SQL Features](#-advanced-sql-features)  
+- [📸 Screenshots](#-screenshots)
+
+
+
 
 
 

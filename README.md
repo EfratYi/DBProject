@@ -2,33 +2,43 @@
 
 **Efrat Miletzky & Efrat Yishay**
 
-## Table of Contents
+## 📚 Table of Contents
 
-### **Phase 1: Design and Build the Database**  
-
+### 🧱 Phase 1: Design and Build the Database  
 - [📜 Introduction](#introduction)  
-- [📊 ERD (Entity-Relationship Diagram)](#erd-entity-relationship-diagram)  
+- [🧩 ERD (Entity-Relationship Diagram)](#erd-entity-relationship-diagram)  
 - [📂 DSD (Data Structure Diagram)](#dsd-data-structure-diagram)  
 - [📝 SQL Scripts](#sql-scripts)  
 - [📊 Data](#data)  
 - [💾 Backup](#backup)  
 
-### **Phase 2: Queries and constraints**  
-- [🔗 Select Queries](#Select-Queries)
-- [🔗 Update Queries](#Update-Queries)
-- [🔗 Delete Queries](#Delete-Queries)
-- [🔗 Constraints](#Constraints)
+### 🔍 Phase 2: Queries and Constraints  
+- [🔎 Select Queries](#select-queries)  
+- [✏️ Update Queries](#update-queries)  
+- [🗑️ Delete Queries](#delete-queries)  
+- [⛓️ Constraints](#constraints)  
 
-### **Phase 3: Integration and Views**  
--[🔍Checking out the new wing](#Checking-out-the-new-wing)
-- [📊 Integration ERD (Entity-Relationship Diagram)](#erd-entity-relationship-diagram-)
-- [📂 Integration DSD (Data Structure Diagram)](#dsd-data-structure-diagram)
-- [🔄 Database Integration Phase](#-Database-Integration-Phase)
-- [📄 Views](#views)
+### 🧠 Phase 3: Integration and Views  
+- [🏗️ Checking Out the New Wing](#checking-out-the-new-wing)  
+- [🧩 Integration ERD](#integration-erd)  
+- [📂 Integration DSD](#integration-dsd)  
+- [🔄 Database Integration Phase](#database-integration-phase)  
+- [🪟 Views](#views)  
 
-### **Phase 4: PL/pgSQL Programming**  
--[⚙️ Main Function1](#Main-Function-1)
--[⚙️ Main Function2](#Main-Function-2)
+### ⚙️ Phase 4: PL/pgSQL Programming  
+- [🧮 Main Function1](#main-function1)  
+- [🧮 Main Function2](#main-function2)  
+- [🔧 Procedures](#procedures)  
+- [📈 Triggers and Logs](#triggers-and-logs)  
+
+### 🧪 Phase 5: Final Web App and Documentation  
+- [🚀 How to Run the Application](#how-to-run-the-application)  
+- [🛠️ Technologies and Tools Used](#technologies-and-tools-used)  
+- [🧠 Project Overview](#project-overview)  
+  - [📦 Main Modules](#main-modules)  
+  - [🧮 Advanced SQL Features](#advanced-sql-features)  
+- [📸 Screenshots](#screenshots)  
+- [📝 Notes](#notes)
 
 
 
@@ -616,4 +626,87 @@ To ensure that all team rankings remain within a valid range (1–100) during up
 
 ##📜to the trigger2 code [View trigger2.sql](stage4/trigger2.sql) 
 
+
+## 🏆 Olympics Management System
+
+**📄 Project Report – Stage 5**
+
+### 🚀 How to Run the Application
+
+**Make sure you have Python 3.10+ installed.**
+
+Install required packages (Flask, psycopg2, etc.):
+
+![image](https://github.com/user-attachments/assets/b04da006-cf95-46d9-b121-bf40e9ec4363)
+
+Run the Flask application:
+
+![image](https://github.com/user-attachments/assets/a8991e0b-ebe4-4d8c-a620-e5ea8bc1799f)
+
+Open your browser and go to:
+
+[App Link](http://localhost:5000)
+
+## 🛠️ Technologies and Tools Used
+
+**•Backend: Python with Flask**
+
+**•Frontend: HTML, Tailwind CSS, Vanilla JS**
+
+**•Database: PostgreSQL**
+
+**•IDE: VSCode**
+
+**-Other Tools:**
+
+**•pgAdmin for database management)**
+
+**•Docker (optional) for containerization**
+
+**•Canva & Snipping Tool (for screenshots)**
+
+## 🧠 Project Overview
+
+This application manages an Olympic-style sports system with the following features:
+
+**✅ Main Modules**
+
+•Athlete Management: Add/edit/delete athletes and view full data.
+
+•Sports Management: Manage sports categories and edit/delete items.
+
+•Competition Management: Add competitions, assign referees, view by type.
+
+•Advanced Operations: Run SQL queries, functions, and procedures.
+
+**🧮 Advanced SQL Features**
+
+•Queries:
+
+1.Athletes born after 2000 who have won medals
+
+2.Sports statistics summary
+
+•Functions:
+
+1.Top athletes per country
+
+2.Average team scores
+
+•Procedures:
+
+1.Assign referees randomly
+
+2.Update medal counts per country
+
+## 📸 Screenshots
+📌 Tip: Upload your screenshots to the GitHub repo inside a screenshots/ folder and reference them like this:
+
+Main Menu
+
+Athletes Management
+
+Competitions Page
+
+Advanced Operations
 

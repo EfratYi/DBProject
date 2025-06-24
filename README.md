@@ -701,12 +701,14 @@ This application manages an Olympic-style sports system with the following featu
 2.Update medal counts per country
 
 ## 📸 Screenshots
-📌[Main Menu](http://localhost:5000)
+📌[Main Menu](stage5/main_menu)
 
-📌[Athletes Management](http://localhost:5000)
+📌[Athletes Management](stage5/athletes)
 
-📌[Competitions Page](http://localhost:5000)
+📌[competitions Management](stage5/competitions)
 
-📌[Advanced Operations](http://localhost:5000)
+📌[sports Management](stage5/sportsstage5/sports)
+
+📌[Advanced Operations](stage5/advanced_operations)
 
 

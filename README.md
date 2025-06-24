@@ -701,13 +701,12 @@ This application manages an Olympic-style sports system with the following featu
 2.Update medal counts per country
 
 ## 📸 Screenshots
-📌 Tip: Upload your screenshots to the GitHub repo inside a screenshots/ folder and reference them like this:
+📌[Main Menu](http://localhost:5000)
 
-Main Menu
+📌[Athletes Management](http://localhost:5000)
 
-Athletes Management
+📌[Competitions Page](http://localhost:5000)
 
-Competitions Page
+📌[Advanced Operations](http://localhost:5000)
 
-Advanced Operations
 

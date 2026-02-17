@@ -33,7 +33,7 @@
 ### 🏆 Stage 5: Olympics Management System  
 - [🔗 GitHub Repository Link](#-github-repository-link)  
 - [🚀 How to Run the Application](#-how-to-run-the-application)  
-- [🛠️ Technologies and Tools Used](#technologies-and-tools-used)
+- [🛠️ Technologies and Tools Used](#-technologies-and-tools-used)
 - [🧠 Project Overview](#-project-overview)  
   - [📦 Main Modules](#-main-modules)  
   - [🧮 Advanced SQL Features](#-advanced-sql-features)  

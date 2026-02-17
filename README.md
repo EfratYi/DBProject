@@ -31,8 +31,9 @@
 - [🔧 Triggers](#triggers)  
 
 ### 🏆 Stage 5: Olympics Management System  
+- [🔗 GitHub Repository Link](#-github-repository-link)  
 - [🚀 How to Run the Application](#-how-to-run-the-application)  
-- [🛠️ Technologies and Tools Used](#-technologies-and-tools-used)  
+- [🛠️ Technologies and Tools Used](#-technologies-and-tools-used) 
 - [🧠 Project Overview](#-project-overview)  
   - [📦 Main Modules](#-main-modules)  
   - [🧮 Advanced SQL Features](#-advanced-sql-features)  
@@ -631,6 +632,10 @@ To ensure that all team rankings remain within a valid range (1–100) during up
 ## 🏆 Olympics Management System
 
 **📄 Project Report – Stage 5**
+
+### 🔗 GitHub Repository Link
+
+ **[Stage 5 Code Repository: EfratYi/ProjectDB](https://github.com/EfratYi/ProjectDB)**
 
 ### 🚀 How to Run the Application
 
